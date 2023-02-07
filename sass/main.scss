@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import 'header';
+@import 'section';
+@import 'section2';
+@import 'section3';
+@import 'section4';
+@import 'footer';
+
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Old Standard TT', serif;
+}
+
+body
+{
+    background-color: #181511;
+}
+
+.container
+{
+    max-width: 100%;
+    width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 750px) {
+    header
+    {
+        nav {
+            .thumb
+            {
+                display: flex;
+            }
+            .menu
+            {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    header
+    {
+        nav 
+        {
+            display: flex;
+            justify-content: space-between;
+            .container
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+            .btn-pr
+            {
+                margin-left: 0;
+            }
+        }
+    }
+}
